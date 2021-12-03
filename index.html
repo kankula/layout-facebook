@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-l">
+            <div class="logo">
+                <i class="fab fa-facebook"></i>
+            </div>
+            <div class="input">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="ค้นหาบน facebook:">
+            </div>
+            <i onclick="click_tap()" class="fas fa-bars"></i>
+        </div>
+        <div class="max-width">
+            <div class="nav-c">
+                <ul class="nav-c-menu">
+                    <li id="i1" class="active"><i class="fas fa-home"></i></li>
+                    <li><i class="fas fa-user-friends"></i></li>
+                    <li><i class="fas fa-tv"></i></li>
+                    <li><i class="fas fa-store-alt"></i></li>
+                    <li><i class="fas fa-users"></i></li>
+                </ul>
+            </div>
+        </div>
+        <div class="nav-r">
+            <div class="p-n">
+                <!-- <i class="fas fa-user-circle"></i> -->
+                <img src="https://scontent.fbkk3-4.fna.fbcdn.net/v/t1.6435-1/cp0/p50x50/73482706_948089282217812_4879911098339295232_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=7206a8&_nc_eui2=AeHc-qpJWQIhGmI1spwqtl8QAOBUe6XkolsA4FR7peSiWwksvkAZsSjg8Q6r9sML_lEMF3hMkqInSJbosYShXtDM&_nc_ohc=G5w2agFJ9OoAX-5Xjt-&_nc_ht=scontent.fbkk3-4.fna&oh=7a4ca5e1b50267172bb1c40c1bfcfcc0&oe=61CEBF52"
+                    alt="">
+                <h3>Kantapon</h3>
+            </div>
+            <ul class="nav-r-menu">
+               
+                <li><i class="fab fa-facebook-messenger"></i></li>
+                <li><i class="fas fa-bell"></i></li>
+                <li><i class="fas fa-chevron-down"></i></li>
+            </ul>
+
+        </div>
+    </nav>
+    <!-- Home Section -->
+    <section class="home">
+        <div class="max-width">
+            <div class="h-content-story">
+                <div class="b-ar"><i class="fas fa-arrow-right"></i></div>
+                <ul>
+                    <li>
+                        <div class="creat-h">
+                            <img src="https://scontent.fbkk3-4.fna.fbcdn.net/v/t1.6435-1/p200x200/73482706_948089282217812_4879911098339295232_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=7206a8&_nc_eui2=AeHc-qpJWQIhGmI1spwqtl8QAOBUe6XkolsA4FR7peSiWwksvkAZsSjg8Q6r9sML_lEMF3hMkqInSJbosYShXtDM&_nc_ohc=cbsmEmqSLbIAX-M-_u4&_nc_ht=scontent.fbkk3-4.fna&oh=fdeb0ec1bb76c2e5d819f3ff94be12f0&oe=61CE2815"
+                                alt="">
+                            <div class="b-c-h"><i class="fas fa-plus"></i></div>
+                            <div class="c-p-h">
+                                <p>สร้างสตอรี่</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="people-h">
+                            <img src="https://scontent.fbkk3-3.fna.fbcdn.net/v/t31.18172-8/26850155_925194144303852_4503850761253408917_o.jpg?_nc_cat=103&ccb=1-5&_nc_sid=84a396&_nc_eui2=AeGpJAmauLKgwY5uI2adSuqd1W7xoDn_QevVbvGgOf9B69QpuB_VEUvLO7xf8ItcX4oyVss3bbEM_iBsaTlabUH-&_nc_ohc=C8E2NJQWel4AX--yXv_&_nc_ht=scontent.fbkk3-3.fna&oh=7ff1390c4354bf8bbb01d79a8b51c032&oe=61CECE37"
+                                alt="">
+                            <div class="c-pl-h">
+                                <img
+                                    src="https://scontent.fbkk3-4.fna.fbcdn.net/v/t1.6435-1/cp0/p50x50/73482706_948089282217812_4879911098339295232_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=7206a8&_nc_eui2=AeHc-qpJWQIhGmI1spwqtl8QAOBUe6XkolsA4FR7peSiWwksvkAZsSjg8Q6r9sML_lEMF3hMkqInSJbosYShXtDM&_nc_ohc=G5w2agFJ9OoAX-5Xjt-&_nc_ht=scontent.fbkk3-4.fna&oh=7a4ca5e1b50267172bb1c40c1bfcfcc0&oe=61CEBF52" />
+                                <p>Kantapon Kilinkulab</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="people-h">
+                            <img src="https://scontent.fbkk4-1.fna.fbcdn.net/v/t39.30808-6/250460484_1507913282902073_1923063257714385571_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=730e14&_nc_eui2=AeGmZXi0jnU48UzMzM3wlM_grUa3mS5Rn2KtRreZLlGfYvWvoyHiBz5ZSgSKcpbS3Rbg7Kl11hhGtAqErNYxmr6p&_nc_ohc=bSa-2VjXihoAX_m8Fv8&_nc_zt=23&_nc_ht=scontent.fbkk4-1.fna&oh=f4fb1ba5912cc584bdf6bc63c2462c73&oe=61AE70AC"
+                                alt="">
+                            <div class="c-pl-h">
+                                <img
+                                    src="https://scontent.fbkk3-4.fna.fbcdn.net/v/t1.6435-1/cp0/p50x50/73482706_948089282217812_4879911098339295232_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=7206a8&_nc_eui2=AeHc-qpJWQIhGmI1spwqtl8QAOBUe6XkolsA4FR7peSiWwksvkAZsSjg8Q6r9sML_lEMF3hMkqInSJbosYShXtDM&_nc_ohc=G5w2agFJ9OoAX-5Xjt-&_nc_ht=scontent.fbkk3-4.fna&oh=7a4ca5e1b50267172bb1c40c1bfcfcc0&oe=61CEBF52" />
+                                <p>Kantapon Kilinkulab</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="people-h">
+                            <img src="https://scontent.fbkk3-4.fna.fbcdn.net/v/t39.30808-6/243697223_1483486442011424_1715358496194631721_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=8bfeb9&_nc_eui2=AeGYVU5l1Fxi_92Ey_8yCGdanf4Kl7Gj5ead_gqXsaPl5oIPBSWlaBsx0ITB6zZ9cQk_H0WZ1KDZVxcf3ap_s1u7&_nc_ohc=5jbkTmvx874AX8i4f2a&_nc_zt=23&_nc_ht=scontent.fbkk3-4.fna&oh=9d2e0bd775858800f2014c2de8e63311&oe=61AF4797"
+                                alt="">
+                            <div class="c-pl-h">
+                                <img
+                                    src="https://scontent.fbkk3-4.fna.fbcdn.net/v/t1.6435-1/cp0/p50x50/73482706_948089282217812_4879911098339295232_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=7206a8&_nc_eui2=AeHc-qpJWQIhGmI1spwqtl8QAOBUe6XkolsA4FR7peSiWwksvkAZsSjg8Q6r9sML_lEMF3hMkqInSJbosYShXtDM&_nc_ohc=G5w2agFJ9OoAX-5Xjt-&_nc_ht=scontent.fbkk3-4.fna&oh=7a4ca5e1b50267172bb1c40c1bfcfcc0&oe=61CEBF52" />
+                                <p>Kantapon Kilinkulab</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="people-h">
+                            <img src="https://scontent.fbkk3-4.fna.fbcdn.net/v/t1.6435-9/73219335_949975468695860_3476868170340368384_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=84a396&_nc_eui2=AeH4K3uwkSC2SRDciG5MJ6fjbtrLhbOmFK5u2suFs6YUrjLmdlED1QdIMWJJY5Uc-gwR_KC1-fMWQp3r3Vd3WDCK&_nc_ohc=MC7KrFtlZrEAX8yhIm6&_nc_ht=scontent.fbkk3-4.fna&oh=2ea2f9456365db877b46446ac51300ce&oe=61CDBBE6"
+                                alt="">
+                            <div class="c-pl-h">
+                                <img
+                                    src="https://scontent.fbkk3-4.fna.fbcdn.net/v/t1.6435-1/cp0/p50x50/73482706_948089282217812_4879911098339295232_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=7206a8&_nc_eui2=AeHc-qpJWQIhGmI1spwqtl8QAOBUe6XkolsA4FR7peSiWwksvkAZsSjg8Q6r9sML_lEMF3hMkqInSJbosYShXtDM&_nc_ohc=G5w2agFJ9OoAX-5Xjt-&_nc_ht=scontent.fbkk3-4.fna&oh=7a4ca5e1b50267172bb1c40c1bfcfcc0&oe=61CEBF52" />
+                                <p>Kantapon Kilinkulab</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="people-h">
+                            <img src="https://scontent.fbkk4-1.fna.fbcdn.net/v/t1.6435-9/73233880_949742888719118_4367112842378215424_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=84a396&_nc_eui2=AeEnqyKkqd3DPfixtInrH4niTpe49rd-xa1Ol7j2t37FrT4oO3YewQANwzLW4PBw0Do4NAN6Q9rvyNElnHN0VOTM&_nc_ohc=BHoI35DFp1wAX_6RFC-&_nc_ht=scontent.fbkk4-1.fna&oh=656b7cb3808e4a0a5fab112dd1c0f34b&oe=61CFB54B"
+                                alt="">
+                            <div class="c-pl-h">
+                                <img
+                                    src="https://scontent.fbkk3-4.fna.fbcdn.net/v/t1.6435-1/cp0/p50x50/73482706_948089282217812_4879911098339295232_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=7206a8&_nc_eui2=AeHc-qpJWQIhGmI1spwqtl8QAOBUe6XkolsA4FR7peSiWwksvkAZsSjg8Q6r9sML_lEMF3hMkqInSJbosYShXtDM&_nc_ohc=G5w2agFJ9OoAX-5Xjt-&_nc_ht=scontent.fbkk3-4.fna&oh=7a4ca5e1b50267172bb1c40c1bfcfcc0&oe=61CEBF52" />
+                                <p>Kantapon Kilinkulab</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="user-post">
+                <div class="post-input">
+                    <img src="https://scontent.fbkk3-4.fna.fbcdn.net/v/t1.6435-1/cp0/p50x50/73482706_948089282217812_4879911098339295232_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=7206a8&_nc_eui2=AeHc-qpJWQIhGmI1spwqtl8QAOBUe6XkolsA4FR7peSiWwksvkAZsSjg8Q6r9sML_lEMF3hMkqInSJbosYShXtDM&_nc_ohc=G5w2agFJ9OoAX-5Xjt-&_nc_ht=scontent.fbkk3-4.fna&oh=7a4ca5e1b50267172bb1c40c1bfcfcc0&oe=61CEBF52"
+                        alt="">
+                    <input type="text" placeholder="คุณคิดอะไรอยู่ Kantapon">
+
+                </div>
+                <hr>
+                <div class="nav-post">
+                    <ul>
+                        <li><i class="fas fa-video"></i>
+                            <p>ถ่ายทอดสด</p>
+                        </li>
+                        <li><i class="fas fa-image"></i>
+                            <p>รูปภาพ/วิดีโอ</p>
+                        </li>
+                        <li><i class="fas fa-grin-beam"></i>
+                            <p>ความรู้สึก/กิจกรรม</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="creat-room">
+                <div class="b-c-r">
+                    <ul>
+                        <li>
+                            <div class="c-r">
+                                <i class="fas fa-video"></i>
+                                <p>สร้างห้อง</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="https://scontent.fbkk3-4.fna.fbcdn.net/v/t1.6435-1/cp0/p50x50/73482706_948089282217812_4879911098339295232_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=7206a8&_nc_eui2=AeHc-qpJWQIhGmI1spwqtl8QAOBUe6XkolsA4FR7peSiWwksvkAZsSjg8Q6r9sML_lEMF3hMkqInSJbosYShXtDM&_nc_ohc=G5w2agFJ9OoAX-5Xjt-&_nc_ht=scontent.fbkk3-4.fna&oh=7a4ca5e1b50267172bb1c40c1bfcfcc0&oe=61CEBF52"
+                                alt="">
+                        </li>
+                        <li>
+                            <img src="https://scontent.fbkk3-4.fna.fbcdn.net/v/t1.6435-1/cp0/p50x50/73482706_948089282217812_4879911098339295232_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=7206a8&_nc_eui2=AeHc-qpJWQIhGmI1spwqtl8QAOBUe6XkolsA4FR7peSiWwksvkAZsSjg8Q6r9sML_lEMF3hMkqInSJbosYShXtDM&_nc_ohc=G5w2agFJ9OoAX-5Xjt-&_nc_ht=scontent.fbkk3-4.fna&oh=7a4ca5e1b50267172bb1c40c1bfcfcc0&oe=61CEBF52"
+                                alt="">
+                        </li>
+                        <li>
+                            <img src="https://scontent.fbkk3-4.fna.fbcdn.net/v/t1.6435-1/cp0/p50x50/73482706_948089282217812_4879911098339295232_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=7206a8&_nc_eui2=AeHc-qpJWQIhGmI1spwqtl8QAOBUe6XkolsA4FR7peSiWwksvkAZsSjg8Q6r9sML_lEMF3hMkqInSJbosYShXtDM&_nc_ohc=G5w2agFJ9OoAX-5Xjt-&_nc_ht=scontent.fbkk3-4.fna&oh=7a4ca5e1b50267172bb1c40c1bfcfcc0&oe=61CEBF52"
+                                alt="">
+                        </li>
+                        <li>
+                            <img src="https://scontent.fbkk3-4.fna.fbcdn.net/v/t1.6435-1/cp0/p50x50/73482706_948089282217812_4879911098339295232_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=7206a8&_nc_eui2=AeHc-qpJWQIhGmI1spwqtl8QAOBUe6XkolsA4FR7peSiWwksvkAZsSjg8Q6r9sML_lEMF3hMkqInSJbosYShXtDM&_nc_ohc=G5w2agFJ9OoAX-5Xjt-&_nc_ht=scontent.fbkk3-4.fna&oh=7a4ca5e1b50267172bb1c40c1bfcfcc0&oe=61CEBF52"
+                                alt="">
+                        </li>
+                        <li>
+                            <img src="https://scontent.fbkk3-4.fna.fbcdn.net/v/t1.6435-1/cp0/p50x50/73482706_948089282217812_4879911098339295232_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=7206a8&_nc_eui2=AeHc-qpJWQIhGmI1spwqtl8QAOBUe6XkolsA4FR7peSiWwksvkAZsSjg8Q6r9sML_lEMF3hMkqInSJbosYShXtDM&_nc_ohc=G5w2agFJ9OoAX-5Xjt-&_nc_ht=scontent.fbkk3-4.fna&oh=7a4ca5e1b50267172bb1c40c1bfcfcc0&oe=61CEBF52"
+                                alt="">
+                        </li>
+                        <li>
+                            <img src="https://scontent.fbkk3-4.fna.fbcdn.net/v/t1.6435-1/cp0/p50x50/73482706_948089282217812_4879911098339295232_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=7206a8&_nc_eui2=AeHc-qpJWQIhGmI1spwqtl8QAOBUe6XkolsA4FR7peSiWwksvkAZsSjg8Q6r9sML_lEMF3hMkqInSJbosYShXtDM&_nc_ohc=G5w2agFJ9OoAX-5Xjt-&_nc_ht=scontent.fbkk3-4.fna&oh=7a4ca5e1b50267172bb1c40c1bfcfcc0&oe=61CEBF52"
+                                alt="">
+                        </li>
+                        <li>
+                            <img src="https://scontent.fbkk3-4.fna.fbcdn.net/v/t1.6435-1/cp0/p50x50/73482706_948089282217812_4879911098339295232_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=7206a8&_nc_eui2=AeHc-qpJWQIhGmI1spwqtl8QAOBUe6XkolsA4FR7peSiWwksvkAZsSjg8Q6r9sML_lEMF3hMkqInSJbosYShXtDM&_nc_ohc=G5w2agFJ9OoAX-5Xjt-&_nc_ht=scontent.fbkk3-4.fna&oh=7a4ca5e1b50267172bb1c40c1bfcfcc0&oe=61CEBF52"
+                                alt="">
+                        </li>
+                        <li>
+                            <img src="https://scontent.fbkk3-4.fna.fbcdn.net/v/t1.6435-1/cp0/p50x50/73482706_948089282217812_4879911098339295232_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=7206a8&_nc_eui2=AeHc-qpJWQIhGmI1spwqtl8QAOBUe6XkolsA4FR7peSiWwksvkAZsSjg8Q6r9sML_lEMF3hMkqInSJbosYShXtDM&_nc_ohc=G5w2agFJ9OoAX-5Xjt-&_nc_ht=scontent.fbkk3-4.fna&oh=7a4ca5e1b50267172bb1c40c1bfcfcc0&oe=61CEBF52"
+                                alt="">
+                        </li>
+                    </ul>
+                    <div class="b-ar-room"><i class="fas fa-arrow-right"></i></div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="head-p">
+                    <div class="p-n-p">
+                        <img src="https://scontent.fbkk3-4.fna.fbcdn.net/v/t1.6435-1/cp0/p50x50/73482706_948089282217812_4879911098339295232_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=7206a8&_nc_eui2=AeHc-qpJWQIhGmI1spwqtl8QAOBUe6XkolsA4FR7peSiWwksvkAZsSjg8Q6r9sML_lEMF3hMkqInSJbosYShXtDM&_nc_ohc=G5w2agFJ9OoAX-5Xjt-&_nc_ht=scontent.fbkk3-4.fna&oh=7a4ca5e1b50267172bb1c40c1bfcfcc0&oe=61CEBF52"
+                            alt="">
+                        <div class="n-d-p">
+                            <h3>Kantapon klinkulab</h3>
+                            <p>1 ซม. <i class="fas fa-globe-americas"></i></p>
+                        </div>
+                    </div>
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+                <div class="c-text-p">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore laboriosam eveniet quasi iste.
+                        Voluptatum magnam dolorum, quidem inventore hic consequuntur. Et sunt, aliquid voluptatibus
+                        expedita nisi reiciendis blanditiis numquam mollitia quisquam quis harum earum? Consequuntur
+                        error eius tempore culpa tenetur fugit amet dolores architecto, sapiente odit quia voluptas
+                        deleniti harum.</p>
+                </div>
+                <div class="pic-p">
+                    <img src="https://scontent.fbkk3-1.fna.fbcdn.net/v/t1.6435-9/71642867_923407611352646_5834567188756824064_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=84a396&_nc_eui2=AeEGI7XPvCL1cUtr8qlzoQbYTAqegjHkSLlMCp6CMeRIuT3a3g-gqj2Okqpo4CB-MC3SW_tqYvC5h5lKfqvS9raL&_nc_ohc=rBEtTJwThgsAX9ysYq-&_nc_ht=scontent.fbkk3-1.fna&oh=2124df080268a042da99da180f6b9492&oe=61D17925"
+                        alt="">
+                </div>
+                <div class="feel-p">
+                    <div class="feel-p-l">
+                        <i class="fab fa-gratipay"></i>
+                        <p>21</p>
+                    </div>
+                    <div class="feel-p-r">
+                        <p>เเชร์ 1 ครั้ง</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="nav-post">
+                    <ul>
+                        <li><i class="far fa-thumbs-up"></i>
+                            <p>ถูกใจ</p>
+                        </li>
+                        <li><i class="far fa-comment-alt"></i>
+                            <p>เเสดงความคิดเห็น</p>
+                        </li>
+                        <li><i class="fas fa-share"></i>
+                            <p>เเชร์</p>
+                        </li>
+                    </ul>
+                </div>
+                <hr>
+                <div class="post-input-comment">
+                    <img src="https://scontent.fbkk3-4.fna.fbcdn.net/v/t1.6435-1/cp0/p50x50/73482706_948089282217812_4879911098339295232_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=7206a8&_nc_eui2=AeHc-qpJWQIhGmI1spwqtl8QAOBUe6XkolsA4FR7peSiWwksvkAZsSjg8Q6r9sML_lEMF3hMkqInSJbosYShXtDM&_nc_ohc=G5w2agFJ9OoAX-5Xjt-&_nc_ht=scontent.fbkk3-4.fna&oh=7a4ca5e1b50267172bb1c40c1bfcfcc0&oe=61CEBF52"
+                        alt="">
+                    <input type="text" placeholder="คุณคิดอะไรอยู่ Kantapon">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Left -->
+    <div id="content-l" class="content-l">
+        <div class="subcontent-l-t">
+            <ul>
+                <li>
+                    <img src="https://scontent.fbkk3-4.fna.fbcdn.net/v/t1.6435-1/cp0/p50x50/73482706_948089282217812_4879911098339295232_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=7206a8&_nc_eui2=AeHc-qpJWQIhGmI1spwqtl8QAOBUe6XkolsA4FR7peSiWwksvkAZsSjg8Q6r9sML_lEMF3hMkqInSJbosYShXtDM&_nc_ohc=G5w2agFJ9OoAX-5Xjt-&_nc_ht=scontent.fbkk3-4.fna&oh=7a4ca5e1b50267172bb1c40c1bfcfcc0&oe=61CEBF52"
+                        alt="">
+                    <h3>Kantapon Kilinkulab</h3>
+                </li>
+                <li>
+                    <div class="icon-s-l-t">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <p>เพื่อน</p>
+                </li>
+                <li>
+                    <div class="icon-s-l-t">
+                        <i class="fas fa-flag"></i>
+                    </div>
+                    <p>เพจ</p>
+                </li>
+                <li>
+                    <div class="icon-s-l-t">
+                        <i class="fas fa-bookmark"></i>
+                    </div>
+                    <p>บันทึกไว้</p>
+                </li>
+                <li>
+                    <div class="icon-s-l-t">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <p>กลุ่ม</p>
+                </li>
+                <li>
+                    <div class="icon-s-l-t">
+                        <i class="fas fa-store-alt"></i>
+                    </div>
+                    <h3>Marketplace</h3>
+                </li>
+                <li>
+                    <div class="icon-s-l-t">
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <p>ดูเพิ่มเติม</p>
+                </li>
+            </ul>
+        </div>
+        <hr>
+        <div class="subcontent-l-b"></div>
+    </div>
+
+
+    <!-- Content Right -->
+    <div class="content-r">
+        <div class="advert-c-r">
+            <h2>ได้รับการสนับสนุน</h2>
+            <div class="advert-c">
+                <img src="https://via.placeholder.com/150" alt="">
+                <div class="a-t-c">
+                    <h3>Advert01</h3>
+                    <h4>Advert01.com</h4>
+                </div>
+            </div>
+            <div class="advert-c">
+                <img src="https://via.placeholder.com/150" alt="">
+                <div class="a-t-c">
+                    <h3>Advert02</h3>
+                    <h4>Advert02.com</h4>
+                </div>
+            </div>
+        </div>
+        <div class="contact-c-r">
+            <div class="head-c-r">
+                <h4>ผู้ติดต่อ</h4>
+                <ul>
+                    <li><i class="fas fa-video"></i></li>
+                    <li><i class="fas fa-search"></i></li>
+                    <li><i class="fas fa-ellipsis-h"></i></li>
+                </ul>
+            </div>
+            <div class="c-n-p-r">
+                <div class="on-p">
+                    <img src="https://scontent.fbkk3-4.fna.fbcdn.net/v/t1.6435-1/cp0/p50x50/73482706_948089282217812_4879911098339295232_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=7206a8&_nc_eui2=AeHc-qpJWQIhGmI1spwqtl8QAOBUe6XkolsA4FR7peSiWwksvkAZsSjg8Q6r9sML_lEMF3hMkqInSJbosYShXtDM&_nc_ohc=G5w2agFJ9OoAX-5Xjt-&_nc_ht=scontent.fbkk3-4.fna&oh=7a4ca5e1b50267172bb1c40c1bfcfcc0&oe=61CEBF52"
+                        alt="">
+                    <li></li>
+                </div>
+                <h3>Kantapon klinkulab</h3>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const click_tap = () => {
+            document.getElementById('content-l').classList.toggle('show')
+        }
+    </script>
+
+</body>
+
+</html>
