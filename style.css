@@ -71,7 +71,9 @@ body {
     color: rgb(148, 148, 148);
     display: none;
 }
-
+.nav-l .fa-bars:hover {
+    color: rgb(133, 133, 133);
+}
 /* Navbar Center */
 .nav-c {
     width: 100%;
@@ -139,6 +141,9 @@ body {
     padding: 10px;
     border-radius: 50%;
     background: rgb(233, 233, 233);
+}
+.nav-r .nav-r-menu li i:hover {
+    background: rgb(207, 207, 207);
 }
 
 /********************** Home Section ***************************/
@@ -628,73 +633,117 @@ body {
      padding-left: 10px;
  }
 
+ /**************************** Responsive **************************************/
 
- @media only screen and (max-width: 1500px) {
-    .max-width {
-        max-width: 600px;
+ @media (max-width: 1500px) {
+     .content-l {
+         width: 300px;
+     }
+     .content-r {
+         width: 300px;
+     } 
+ }
+ @media (max-width: 1390px) {
+    .navbar .input input {
+        display: none;
+    }
+    .content-l {
+        display: none;
+    }
+    .home .max-width {
+        margin-right:330px ;
     }
     
-    .h-content-story ul {
-        grid-template-rows: 1fr;
-
-    }
-    .content-l {
-        display: none;
-    }
-   
 }
-@media only screen and (max-width: 1430px) {
-    .navbar .input input {
-        display: none;
-    }
-    .nav-c {
-        margin-right: 350px;
-    }
+@media (max-width: 1080px) {
     .nav-c .nav-c-menu li {
-        padding: 17px 43px;
+        padding: 15px 30px;
     }
-    .home {
-        margin-right: 209px;
-    }
-    .content-l {
+    .content-r {
         display: none;
     }
+    .home .max-width {
+        margin: auto;
+    }
+    
 }
-@media only screen and (max-width: 1070px) {
-    .navbar .input input {
+@media (max-width: 880px) {
+    .nav-r .p-n {
+        display: none;
+    }
+    
+}
+@media (max-width: 777px) {
+    .nav-c {
         display: none;
     }
     .nav-l .fa-bars {
         display: block;
     }
-    .nav-c {
-        display: none;
+    .home .max-width {
+        max-width: 620px;
     }
-    .home {
-        margin-right: 350px;
+    .h-content-story ul li {
+        width: 95px;
+        height: 160px;
     }
-    
-    
-}
- @media only screen and (max-width: 990px) {
-    .home {
-        margin-right: 0;
+    .h-content-story .b-ar {
+        top: 62px;
     }
-    .content-r {
-        display: none;
+    .content-l {
+        width: 100%;
     }
 }
-@media only screen and (max-width: 990px) {
-    .max-width {
-        max-width: 500px;
+@media (max-width: 650px) {
+    .home .max-width {
+        max-width: 450px;
     }
-    
+    .user-post .nav-post ul li i {
+       font-size: 1rem; 
+    }
+    .content-l .subcontent-l-t ul li h3, p {
+        font-size: .7rem;
+    }
+    .creat-room .b-c-r ul li {
+        padding: 5px;
+    }
+    .creat-room .b-c-r ul li img {
+        width: 40px;
+    }
+    .creat-room .b-ar-room {
+        top: 5px;
+        right: 10px;
+        width: 40px;
+        height: 40px;
+    }
 }
-@media only screen and (max-width: 490px) {
-    .max-width {
-        max-width: 350px;
+@media (max-width: 490px) {
+    .home .max-width {
+        max-width: 400px;
     }
-    .nav-r .p-n {
-        display: none;
+    .h-content-story ul li {
+        width: 80px;
+        height: 140px;
+    } 
+    .h-content-story .people-h .c-pl-h p {
+        font-size: .7rem;
+    }
+    .user-post .post-input img {
+        width: 30px;
+    }
+    .user-post .post-input input {
+        font-size: .7rem;
+    }
+    .post .head-p .p-n-p img {
+        width: 40px;
+    }
+    .post .head-p .p-n-p .n-d-p h3 {
+        font-size: .9rem;
+    }
+    .post .post-input-comment img {
+        width: 40px;
+    }
+    .post .post-input-comment input {
+        font-size: .7rem;
     }
 }
